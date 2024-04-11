@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <!-- google font -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+       <!-- font awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+       <!-- scroll reveal -->
+       <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+    </head>
+    <body>
+        <!-- Navbar -->
+            <div class="page-wrapper">
+                <div class="nav-wrapper">
+                 <nav class="navbar">
+                    <a href="#" class="img"><h1>B<span>arnabas</span></h1></a>
+                   <div class="menu-toggle" id="mobile-menu">
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                   </div>
+                   <ul class="nav no-search">
+                     <li class="nav-item"><a href="#home">Home</a></li>
+                     <li class="nav-item"><a href="#about">About</a></li>
+                     <li class="nav-item"><a href="#service">Services</a></li>
+                     <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                     <li class="nav-item"><a href="#contact">Contact</a></li>
+                   </ul>
+                 </nav>
+                 <div class="grad-bar"></div>
+                 </div>
+               </div>   
+                <!--end of Navbar  -->
+                <!-- home section -->
+                <section class="home text-center" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="name">
+                                    <h1>HELLO, I'M <br> <span>Barnabas Oyewole</span></h1>
+                                </div>
+                                <p class="lead">Frontend Developer</p>
+                                <a href="#" class="btn btn-primary">DOWNLOAD RESUME</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about" id="about">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="image-container">
+                                    <img src="img/Barnabas Passport.jpeg" class="img-fluid" alt="About Me Image">
+                                    <div class="image-box"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about-text">
+                                    <h2>About Me</h2>
+                                    <p>I am a seasoned frontend developer with a robust two-year track record, dedicated to delivering impactful IT solutions to businesses through intuitive web interfaces. </p>
+                                    <p>My expertise spans a wide array of IT frameworks, complemented by a deep understanding of web development principles. </p>
+                                    <p>This comprehensive skill set enables me to not only provide effective solutions but also offer valuable guidance and tutoring in the field of web development.</p>
+                                </div>
+                                <div class="about-icon">
+                                    <a href="#" class="social-icon" style="background-color: #1877F2;"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="social-icon" style="background-color: white;"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#" class="social-icon" style="background-color: #E4405F;"><i class="fab fa-instagram"></i></a>
+<a href="#" class="social-icon" style="background-color: #0A66C2;"><i class="fab fa-linkedin"></i></a>
+<a href="#" class="social-icon" style="background-color: #000000;"><i class="fab fa-github"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="skills">
+                    <div class="container">
+                        <h2>Skills</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="chart-container">
+                                    <canvas id="htmlChart"></canvas>
+                                </div>
+                                <h3 class="text-center">HTML</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart-container">
+                                    <canvas id="cssChart"></canvas>
+                                </div>
+                                <h3 class="text-center">CSS</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart-container">
+                                    <canvas id="bootstrapChart"></canvas>
+                                </div>
+                                <h3 class="text-center">Bootstrap</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart-container">
+                                    <canvas id="jsChart"></canvas>
+                                </div>
+                                <h3 class="text-center">JavaScript</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart-container">
+                                    <canvas id="tailwindChart"></canvas>
+                                </div>
+                                <h3 class="text-center">Tailwind</h3>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart-container">
+                                    <canvas id="reactChart"></canvas>
+                                </div>
+                                <h3 class="text-center">React</h3>
+                             </div>
+                        </div>
+                        <div class="legend">
+                            <div class="legend-item">
+                                <span style="background-color: rgb(26,140,184);"></span> Proficient
+                            </div>
+                            <div class="legend-item"> 
+                                <span style="background-color: rgb(205, 19, 54);"></span> Learning
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="service py-5" id="service">
+                    <div class="container">
+                        <h2 class="text-center mb-5">Services</h2>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="service-card">
+                                    <i class="fas fa-paint-brush service-icon"></i>
+                                    <h3>Web Design</h3>
+                                    <p>Proficient to create stunning and user-friendly websites tailored to your specific needs, ensuring a seamless and visually appealing online presence for your business.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="service-card">
+                                    <i class="fas fa-chalkboard-teacher service-icon"></i>
+                                    <h3>Web Tutor</h3>
+                                    <p>As an experienced tutor, i provide comprehensive and personalized training to help you master web development technologies and techniques.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="service-card">
+                                    <i class="fas fa-tools service-icon"></i>
+                                    <h3>IT Support</h3>
+                                    <p>Dedicated IT support team offers reliable efficient solutions to keep your systems running smoothly. From troubleshooting technical issues to implementing security measures.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="service-card">
+                                    <i class="fas fa-network-wired service-icon"></i>
+                                    <h3>Networking</h3>
+                                    <p>I specialize in designing and optimizing network infrastructure to ensure seamless connectivity and communication within your organization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio" id="portfolio">
+                    <div class="container">
+                        <h2>Portfolio</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <img src="img/hotel.jpg" alt="Project 1">
+                                    <div class="portfolio-info">
+                                        <h3>Hotel Profile</h3>
+                                        <p class="description">Crafted a sophisticated website showcasing a hotel's amenities, rooms, and booking options. Enables seamless reservations and inquiries. Optimized for user-friendly navigation and efficient communication with potential guests.</p>
+                                        <a href="https://kkapartments.com.ng" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <img src="img/fitness.jpg" alt="Project 2">
+                                    <div class="portfolio-info">
+                                        <h3>Fitness Website</h3>
+                                        <p class="description">Crafted a gym website enabling clients to conveniently access a BMI calculator on the platform, enhancing their fitness journey and experience.</p>
+                                        <a href="https://gym2-psi.vercel.app" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <img src="img/expense.jpg" alt="Project 3">
+                                    <div class="portfolio-info">
+                                        <h3>Expense Tracker</h3>
+                                        <p class="description">Created an expense tracking web app for monitoring income and expenses, providing detailed transaction records for better financial management and budgeting.</p>
+                                        <a href="#" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <img src="img/crud.jpg" alt="Project 3">
+                                    <div class="portfolio-info">
+                                        <h3>CRUD Operation</h3>
+                                        <p class="description">Implemented CRUD (Create, Read, Update, Delete) functionality in a web application, enabling users to perform essential database operations like adding, viewing, modifying, and deleting records seamlessly.</p>
+                                        <a href="https://random-quote-sigma-eight.vercel.app" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <img src="img/lizcar.jpg" alt="Project 3">
+                                    <div class="portfolio-info">
+                                        <h3>Car Manufacturing </h3>
+                                        <p class="description">Design a website template for a car manufacturing company seeking to showcase their products and gather information from potential customers interested in their car models and services.</p>
+                                        <a href="https://motors-kohl.vercel.app" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio.jpg" alt="Project 3">
+                                    <div class="portfolio-info">
+                                        <h3>My Portfolio</h3>
+                                        <p class="description">Developed a personal portfolio website showcasing my projects, skills, and achievements in web development. Implemented responsive design, smooth animations, and interactive elements to engage visitors and highlight my capabilities effectively.</p>
+                                        <a href="#" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- contact section -->
+               
+<section class="contact py-3 py-md-5" id="contact">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="mb-4 display-5 text-center">Contact</h2>
+          <p class="text-center">Feel free to reach out for further details about the listed services or any additional ones you'd like to discuss engaging me for.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="">
+  
+            <form action="https://formsubmit.co/oyewolebarnabas97@email.com" method="post">
+              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                <div class="col-12">
+                  <label for="fullname" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullname" name="email" value="" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                      </svg>
+                    </span>
+                    <input type="email" class="form-control" id="email" name="email" value="" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                      </svg>
+                    </span>
+                    <input type="tel" class="form-control" id="phone" name="email" value="">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="message" name="email" rows="3" required></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+                <!-- end of contact section -->
+            <!-- footer -->
+            <section class="footer">
+                <div class="footer-main">
+                    <div class="footer-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-footer-widget">
+                                        <h4>About Me</h4>
+                                        <p>Welcome to my portfolio! Here, you'll find a showcase of my latest projects and creations. From web design to application development, I'm passionate about bringing ideas to life through code and creativity.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="single-footer-widget">
+                                        <h4>Quick Links</h4>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Service</a></li>
+                                            <li><a href="#">Portfolio</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="single-footer-widget">
+                                        <h4>Contact</h4>
+                                        <p>Plot 15, PZ Cusson Estate, RD 1, Igbe, Ikorodu.</p>
+                                        <ul>
+                                            <li><a href="#">Phone: +234 8062794852</a></li>
+                                            <li><a href="#">Email: www.oyewolebarnabas97@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="single-footer-widget">
+                                        <h4>Subscribe</h4>
+                                        <form class="subscribe-form" action="#" method="post">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder="Email Address">
+                                            <button type="submit" class="btn">Sign Up</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-12">
+                                    <div class="footer-copy-right text-center">
+                                        <p>&copy; <script>document.write(new Date().getFullYear())</script> All rights reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+            <!-- end of footer -->
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>            
+                
+        <!--bootstrap js  -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="script.js" async defer></script>
+        <script>
+            // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+        </script>
+            
+    </body>
+</html>
