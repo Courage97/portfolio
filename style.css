@@ -8,7 +8,14 @@
   body{
     background-color:#12100E !important; 
     font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden !important;
   }
+  @media only screen and (max-width: 720px) {
+    html, body {
+      overflow-x: hidden !important;
+    }
+  }
+  
   /* BASIC SETUP */
   
   .page-wrapper {
@@ -42,6 +49,7 @@
     height: 50px;
     width: 100%;
     overflow: hidden;
+    overflow-x: hidden;
     padding-left: 30px;
     position: fixed;
     z-index:1000;
@@ -280,9 +288,10 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-    height: 100vh; 
+    height: 100%; 
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 10px;
+    overflow-x: hidden;
     /* animation: fadeInUp 3s ease-in-out; */
 }
 .home .name{
@@ -292,7 +301,7 @@
     line-height: 40px;
 }
 .home .name h1{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 5rem;
 }
@@ -340,7 +349,8 @@
     position: relative;
     overflow: hidden;
     padding: 50px 0;
-    margin-left:40px;
+    margin: 0 20px;
+    width: 100%;
     z-index:1;
 }
 
@@ -409,6 +419,7 @@
   display: inline-block;
   border-radius: 50%;
   margin-right: 35px;
+  margin:10px;
   transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -652,14 +663,14 @@ canvas {
     margin-left:40px;
   }
 .footer h4{
-  color: white;
+  color: #1A8CB8;
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 30px;
 }
 .footer p{
   color: white;
-  font-size: 15px;
+  font-size: 12px;
 }
 .footer ul{
   list-style: none;
